@@ -1,11 +1,13 @@
 import argparse
 
 
+
 DIFFUSION_DEFAULTS = {
-    "douban-book": {"rw_alpha": 0.70, "rw_beta": 0.30, "rw_topk": 16},
-    "tmall": {"rw_alpha": 0.40, "rw_beta": 0.30, "rw_topk": 16},
-    "amazon-book": {"rw_alpha": 0.40, "rw_beta": 0.70, "rw_topk": 16},
+    "douban-book": {"rw_alpha": 1.0, "rw_beta": 0.3, "rw_topk": 8},
+    "tmall": {"rw_alpha": 0.7, "rw_beta": 0.3, "rw_topk": 16},
+    "amazon-book": {"rw_alpha": 0.7, "rw_beta": 0.3, "rw_topk": 8},
 }
+
 
 
 def str2bool(v):
