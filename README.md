@@ -63,9 +63,9 @@ The parser automatically selects the following defaults based on `--dataset`:
 
 | Dataset | `--dataset` | α (`--rw_alpha`) | β (`--rw_beta`) | k (`--rw_topk`) |
 | --- | --- | --- | --- | --- |
-| Douban-book | `douban-book` | 0.70 | 0.30 | 16 |
-| Tmall | `tmall` | 0.40 | 0.30 | 16 |
-| Amazon-book | `amazon-book` | 0.40 | 0.70 | 16 |
+| Douban-book | `douban-book` | 1.00 | 0.30 | 8 |
+| Tmall | `tmall` | 0.70 | 0.30 | 16 |
+| Amazon-book | `amazon-book` | 0.70 | 0.30 | 8 |
 
 Here, α controls the diffusion score weight, β controls the target-item popularity penalty, and k is the number of neighbors retained per item in the diffusion graph. It is separate from the evaluation cutoffs in `--top_K`.
 
@@ -85,13 +85,13 @@ The equivalent commands with explicit diffusion parameters are:
 
 ```bash
 # Douban-book
-python main.py --dataset douban-book --rw_alpha 0.70 --rw_beta 0.30 --rw_topk 16
+python main.py --dataset douban-book --rw_alpha 1.0 --rw_beta 0.3 --rw_topk 8
 
 # Tmall
-python main.py --dataset tmall --rw_alpha 0.40 --rw_beta 0.30 --rw_topk 16
+python main.py --dataset tmall --rw_alpha 0.7 --rw_beta 0.3 --rw_topk 16
 
 # Amazon-book
-python main.py --dataset amazon-book --rw_alpha 0.40 --rw_beta 0.70 --rw_topk 16
+python main.py --dataset amazon-book --rw_alpha 0.7 --rw_beta 0.3 --rw_topk 8
 ```
 
 Running `python main.py` uses Douban-book with `(alpha, beta, k) = (0.70, 0.30, 16)`.
