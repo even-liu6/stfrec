@@ -157,3 +157,26 @@ The following citation refers to the underlying LightCCF work:
   year = {2025}
 }
 ```
+
+## Dataset Sources
+
+We conduct experiments on three publicly available recommendation datasets: Douban-book, Tmall, and Amazon-book. The preprocessed versions used in this project are obtained from the official LightCCF repository. We follow the corresponding data preprocessing settings and use the released datasets for model evaluation.
+
+| Dataset | Data Source | Reference |
+|---|---|---|
+| Douban-book | Douban | Yu et al., SIGIR 2022 |
+| Tmall | Tmall (Alibaba) | Ren et al., SIGIR 2023 |
+| Amazon-book | Amazon | Sang et al., Expert Systems with Applications, 2025 |
+
+**Dataset Repository:**  
+https://github.com/ZzYUuuu/LightCCF/tree/main/dataset
+
+**Related References:**
+
+1. Yu, J., et al. Are Graph Augmentations Necessary?: Simple Graph Contrastive Learning for Recommendation. SIGIR 2022. https://doi.org/10.1145/3477495.3531937
+
+2. Ren, X., et al. Disentangled Contrastive Collaborative Filtering. SIGIR 2023. https://doi.org/10.1145/3539618.3591665
+
+3. Sang, L., et al. Towards Similar Alignment and Unique Uniformity in Collaborative Filtering. Expert Systems with Applications, 259, 125346, 2025. https://doi.org/10.1016/j.eswa.2024.125346
+
+4. Zhang, Y., et al. Unveiling Contrastive Learning's Capability of Neighborhood Aggregation for Collaborative Filtering. SIGIR 2025. https://doi.org/10.1145/3726302.3730111
